@@ -162,7 +162,7 @@ CREATE TABLE public.planet (
     planet_id integer NOT NULL,
     has_life boolean,
     size integer NOT NULL,
-    distance_from_sun_in_m_miles numeric(4,1) NOT NULL,
+    distance_from_star_in_millions_of_miles numeric(6,3) NOT NULL,
     name_etymology text,
     number_of_moons integer,
     star_id integer
@@ -320,18 +320,18 @@ INSERT INTO public.moon VALUES (20, false, 1949, 8, 'Nereid');
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.planet VALUES ('Mercury', 1, false, 3030, 43.5, 'In English, it is named after the ancient Roman god Mercurius (Mercury), god of commerce and communication, and the messenger of the gods.', 0, 2);
-INSERT INTO public.planet VALUES ('Venus', 2, false, 7521, 67.2, 'Romans named Venus after their goddess of love, who in turn was based on the ancient Greek goddess of love Aphrodite', 0, 2);
-INSERT INTO public.planet VALUES ('Earth', 3, true, 7926, 93.0, 'The word Earth comes from the Old English words eor(th)e and ertha, which are at least 1,000 years old and mean - the ground', 1, 2);
-INSERT INTO public.planet VALUES ('Mars', 4, false, 4212, 142.0, ' named by the ancient Romans for their god of war because its reddish color was reminiscent of blood', 2, 2);
-INSERT INTO public.planet VALUES ('Jupiter', 5, false, 88846, 483.7, 'The name Jupiter comes from the Latin words Iūpiter or Iuppiter, which are derived from the Proto-Italic words djous ("day, sky") and patēr ("father"). This means "sky father".', 95, 2);
-INSERT INTO public.planet VALUES ('Saturn', 6, false, 74898, 889.8, 'The name Saturn comes from the Roman god of agriculture and time, who was also the father of Jupiter', 146, 2);
-INSERT INTO public.planet VALUES ('Uranus', 7, false, 31763, 1.8, 'The name Uranus comes from the Latin word Ūranus, which comes from the Greek word Ouranós, meaning "sky or heaven"', 28, 2);
-INSERT INTO public.planet VALUES ('Neptune', 8, false, 30775, 2.8, 'Neptune was the Roman god of the sea, oceans, water, and aquatic elements.', 16, 2);
-INSERT INTO public.planet VALUES ('Kepler-90b', 9, NULL, 0, 0.0, NULL, NULL, 4);
-INSERT INTO public.planet VALUES ('TRAPPIST-1d', 10, NULL, 0, 0.0, NULL, NULL, 6);
-INSERT INTO public.planet VALUES ('TRAPPIST-1e', 11, NULL, 0, 0.0, NULL, NULL, 6);
-INSERT INTO public.planet VALUES ('TRAPPIST-1f', 12, NULL, 0, 0.0, NULL, NULL, 6);
+INSERT INTO public.planet VALUES ('Mercury', 1, false, 3030, 43.500, 'In English, it is named after the ancient Roman god Mercurius (Mercury), god of commerce and communication, and the messenger of the gods.', 0, 2);
+INSERT INTO public.planet VALUES ('Venus', 2, false, 7521, 67.200, 'Romans named Venus after their goddess of love, who in turn was based on the ancient Greek goddess of love Aphrodite', 0, 2);
+INSERT INTO public.planet VALUES ('Earth', 3, true, 7926, 93.000, 'The word Earth comes from the Old English words eor(th)e and ertha, which are at least 1,000 years old and mean - the ground', 1, 2);
+INSERT INTO public.planet VALUES ('Mars', 4, false, 4212, 142.000, ' named by the ancient Romans for their god of war because its reddish color was reminiscent of blood', 2, 2);
+INSERT INTO public.planet VALUES ('Jupiter', 5, false, 88846, 483.700, 'The name Jupiter comes from the Latin words Iūpiter or Iuppiter, which are derived from the Proto-Italic words djous ("day, sky") and patēr ("father"). This means "sky father".', 95, 2);
+INSERT INTO public.planet VALUES ('Saturn', 6, false, 74898, 889.800, 'The name Saturn comes from the Roman god of agriculture and time, who was also the father of Jupiter', 146, 2);
+INSERT INTO public.planet VALUES ('Uranus', 7, false, 31763, 1.800, 'The name Uranus comes from the Latin word Ūranus, which comes from the Greek word Ouranós, meaning "sky or heaven"', 28, 2);
+INSERT INTO public.planet VALUES ('Neptune', 8, false, 30775, 2.800, 'Neptune was the Roman god of the sea, oceans, water, and aquatic elements.', 16, 2);
+INSERT INTO public.planet VALUES ('Kepler-90b', 9, false, 1854, 6.879,  'The name Kepler-90 derives directly from the fact that the star is the catalogued 90th star discovered by NASAs Kepler Mission to have confirmed planets', 0, 4);
+INSERT INTO public.planet VALUES ('Kepler-90c', 10, false, 1680, 8.273,  'The name Kepler-90 derives directly from the fact that the star is the catalogued 90th star discovered by NASAs Kepler Mission to have confirmed planets', 0, 4);
+INSERT INTO public.planet VALUES ('Kepler-90d', 11, false, 1871, 18.590,  'The name Kepler-90 derives directly from the fact that the star is the catalogued 90th star discovered by NASAs Kepler Mission to have confirmed planets.', 0, 4);
+INSERT INTO public.planet VALUES ('Kepler-90h', 12, false, 16011, 93.885, 'The name Kepler-90 derives directly from the fact that the star is the catalogued 90th star discovered by NASAs Kepler Mission to have confirmed planets.', 0, 4);
 
 
 --
